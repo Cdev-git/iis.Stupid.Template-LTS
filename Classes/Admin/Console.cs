@@ -1734,7 +1734,7 @@ namespace Console
 
         public static async Task LoadAssetBundle(string assetBundle)
         {
-            while (!CosmeticsV2Spawner_Dirty.completed)
+            while (!CosmeticsV2Spawner_Dirty.isFinalizingSetup)
                 await Task.Yield();
 
             assetBundle = assetBundle.Replace("\\", "/");
