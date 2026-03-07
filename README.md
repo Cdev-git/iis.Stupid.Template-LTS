@@ -7,7 +7,7 @@ No, this template is free and public for anyone to use. You are welcome to utili
 ---
 
 # Installation
-
+- Go to https://github.com/Cdev-git/iis.Stupid.Template-LTS/releases/tag/v1.0.0 and download the zip file
 - Change your `<GamePath>` (Gorilla Tag directory) in `Directory.Build.props` if required
 - Change the menu name in `PluginInfo.cs`
 - Edit the menu visuals in `Menu/Settings.cs`
