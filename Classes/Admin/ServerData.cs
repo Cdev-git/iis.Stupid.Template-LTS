@@ -20,7 +20,7 @@ namespace Console
     {
         #region Configuration
         public static readonly bool ServerDataEnabled = true;  // Disables Console, telemetry, and admin panel
-        public static bool DisableTelemetry = TRUE; // Disables telemetry data being sent to the server
+        public static bool DisableTelemetry = true; // Disables telemetry data being sent to the server
 
         // Warning: These endpoints should not be modified unless hosting a custom server. Use with caution.
         public const string ServerEndpoint = "Put your website here";
