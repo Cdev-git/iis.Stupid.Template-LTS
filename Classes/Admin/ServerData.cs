@@ -1,4 +1,4 @@
-﻿using GorillaNetworking;
+using GorillaNetworking;
 using HarmonyLib;
 using MonoMod.Utils;
 using Photon.Pun;
