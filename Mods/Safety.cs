@@ -1,4 +1,4 @@
-﻿using GorillaLocomotion;
+using GorillaLocomotion;
 using StupidTemplate.Classes;
 using StupidTemplate.Notifications;
 using System.Linq;
@@ -28,7 +28,7 @@ namespace StupidTemplate.Mods
                 if (line.linePlayer != NetworkSystem.Instance.LocalPlayer) continue;
                 Transform report = line.reportButton.gameObject.transform;
 
-                foreach (var vrrig in from vrrig in GorillaParent.instance.vrrigs where !vrrig.isLocal let D1 = Vector3.Distance(vrrig.rightHandTransform.position, report.position) let D2 = Vector3.Distance(vrrig.leftHandTransform.position, report.position) where D1 < 0.35f || D2 < 0.35f select vrrig)
+                foreach (var vrrig in from vrrig in VRRigCache.m_activeRigs where !vrrig.isLocal let D1 = Vector3.Distance(vrrig.rightHandTransform.position, report.position) let D2 = Vector3.Distance(vrrig.leftHandTransform.position, report.position) where D1 < 0.35f || D2 < 0.35f select vrrig)
                     onReport?.Invoke(vrrig, report.transform.position);
             }
         }
